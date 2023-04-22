@@ -1,0 +1,249 @@
+/* VARIABLES */
+:root {
+  --background: hsla(151, 100%, 37%, 0.8);
+  --text-shadow: 0.2rem 0.2rem rgba(66, 66, 66, 0.3);
+  --section-margin-bottom: 5rem;
+  --text-margin-bottom: 2rem;
+}
+
+/* COMMON */
+* {
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+}
+
+.title {
+    font-size: 2.5rem;
+    text-shadow: var(--text-shadow);
+    margin-bottom: var(--text-margin-bottom);
+}
+
+#logo {
+  font-size: 5rem;
+  margin-left: var(--text-margin-bottom);
+  color: white;
+}
+
+.btn {
+  width: 15rem;
+  height: 4rem;
+  font-size: 2rem;
+  border-radius: 0.75rem;
+  box-shadow: 0.75rem 0.75rem rgba(0,0,0,0.5);
+}
+
+
+
+/* HEADER */
+
+header {
+  width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--background);
+  margin-bottom: var(--section-margin-bottom);
+  align-items: center;
+}
+
+#btn-participate-header {
+  margin-right: 5rem;
+  color: black;
+  background-color: white;
+  border: 0.2rem solid white;
+}
+
+
+/* INTRO SECTION */
+
+.intro {
+  background-color: var(--background);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: var(--section-margin-bottom);
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.intro-icons {
+  max-width: 50%;
+  margin-bottom: var(--text-margin-bottom);
+}
+
+.intro-text {
+  font-size: 3rem;
+  margin-bottom: var(--text-margin-bottom);
+}
+
+/* WHERE SECTION */
+
+#where-title {
+  margin-bottom: var(--text-margin-bottom);
+}
+
+.carousel {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 4rem;
+}
+
+.slideshow-container {
+  position: relative;
+}
+
+.mySlides {
+  display: none;
+}
+
+.slide-img {
+  width: 100%;
+  height: auto;
+}
+  
+.prev, .next {
+  align-items: center;
+  justify-content: center;
+  background-color: hsla(232, 5%, 20%, 0.7);
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: 6rem;
+  height: 8rem;
+  color: white;
+  font-weight: bold;
+  font-size: 4rem;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  display: flex;
+}
+  
+.next {
+  right: 0;
+}
+  
+  
+.prev:hover, .next:hover {
+  background-color: hsla(232, 5%, 20%, 0.9)
+}
+  
+  
+.text {
+  display: flex;
+  align-items: center;
+  color: #f2f2f2;
+  background-color: var(--background);
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 3rem;
+  position: relative;
+  bottom: 8px;
+  width: 100%;
+  height: 2rem;
+  align-items: center;
+}
+  
+.fade {
+  animation-name: fade;
+  animation-duration: 0.8s;
+}
+  
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+/* PARTICIPATE SECTION */
+
+.participate {
+  display: flex;
+  justify-content: center;
+  margin-bottom: var(--section-margin-bottom);
+}
+
+#participate-title {
+  margin-bottom: var(--text-margin-bottom);
+}
+
+.steps-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 2rem;
+  list-style: decimal;
+  line-height: 3rem;
+  padding-right: 2rem;
+  list-style: none;
+}
+
+.steps {
+  color: white;
+  padding-left: 1rem;
+  font-weight: 600;
+  padding: 2rem;
+  background-color: var(--background);
+  border-radius: 1rem;
+}
+
+/* HELP NOW SECTION */
+.help {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8rem;
+}
+
+#help-text {
+  font-size: 2rem;
+}
+
+#help-now {
+  margin-bottom: var(--text-margin-bottom);
+}
+
+#help-text {
+  margin-bottom: 1rem;
+}
+
+iframe {
+  width: 45rem;
+  height: 30rem;
+  margin-bottom: 1rem;
+}
+
+#btn-help {
+  color: white;
+  background-color: var(--background);
+  border: 0.2rem solid var(--background);
+}
+
+
+/* FOOTER */
+
+footer {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color:var(--background);
+}
+.social-midia {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.social-media-icons {
+  padding: 1rem;
+}

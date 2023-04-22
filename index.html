@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+  <title>Projeto DoeAki</title>
+  <script src="script.js" defer></script>
+  <script
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
+  defer
+></script>
+
+</head>
+
+<header>
+  <h2 class="title" id="logo"><code>&#10084</code>DoeAki</h2>
+  <button class="btn" id="btn-participate-header">PARTICIPE</button>
+</header>
+
+<body>
+  <h1 class="title">O QUE É O PROJETO?</h1>
+  <section class="intro">
+    <img src="assets/disaster.png" class="intro-icons" />
+    <h2 class="intro-text">Quando desastres ambientais acontecem</h2>
+    <img src="assets/help(1).png" class="intro-icons" />
+    <h2 class="intro-text">
+      Unimos ONG's que prestam apoio a voluntários em potencial!
+    </h2>
+  </section>
+
+  <h2 class="title">ONDE JÁ ATUAMOS</h2>
+  <section class="news">
+    <div class="carousel">
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <img class="slide-img" src="assets/what-is-1.jpg" />
+          <div class="text">
+            Resgate de animais nos alagamentos em Petrópolis/RJ
+          </div>
+        </div>
+
+        <div class="mySlides fade">
+          <img class="slide-img" src="assets/what-is-2.jpg" />
+          <div class="text">
+            Resgate, apoio e acolhimento nos deslizamentos no Morro da Santa Maria, em Santos/SP
+          </div>
+        </div>
+
+        <div class="mySlides fade">
+          <img class="slide-img" src="assets/what-is-3.jpg" />
+          <div class="text">
+            Mutirão de limpeza após alagamentos em comunidade de Caraguatatuba/SP
+          </div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+    </div>
+  </section>
+
+  <h2 class="title">COMO PARTICIPAR</h2>
+  <section class="participate">
+    <img src="assets/participate.png" class="icons" id="icon-1" />
+    <ul class="steps-list">
+      <li class="steps">Cadastre-se como voluntário</li>
+      <li class="steps">Se um desastre ocorrer dentro do seu raio</li>
+      <li class="steps">Você receberá uma notificação</li>
+    </ul>
+  </section>
+
+  <h2 class="title">AJUDE AGORA</h2>
+  <section class="help">
+    <h3 id="help-text">DESLIZAMENTOS EM SÃO SEBASTIÃO/SP</h3>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d8664.055857847798!2d-45.305201990466905!3d-23.57128263032783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1spt-BR!2sbr!4v1682131254197!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <button class="btn" id="btn-help">AJUDAR</button>
+  </section>
+
+  <footer>
+    <div class="social-midia">
+      <h2 class="title" id="logo"><code>&#10084</code>DoeAki</h2>
+      <div >
+      <img class="social-media-icons" src="assets/instagram.png" />
+      <img class="social-media-icons" src="assets/twitter.png" />
+      <img class="social-media-icons" src="assets/facebook.png" />
+    </div>
+  </footer>
+</body>

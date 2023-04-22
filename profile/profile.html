@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+  <title>Projeto DoeAki</title>
+  <script src="script.js" defer></script>
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
+    defer
+  ></script>
+</head>
+
+<header>
+  <h2 class="title" id="logo"><code></code>DoeAki</h2>
+  <button class="btn" id="btn-participate-header">PARTICIPE</button>
+</header>
+
+<body>
+  <div class="profile">
+    <div>
+    <img id="profile-img" src="../assets/profile-placeholder.jpg" />
+    <button class="btn">Trocar foto</button>
+  </div>
+  <form action="" method="post" class="profile-info">
+      <div class="form-info">
+        <label for="name">Nome completo</label>
+        <input type="text" name="name" />
+        <label for="cpf">CPF</label>
+        <input type="text" name="cpf" />
+        <label for="cep">CEP</label>
+        <input type="text" name="cep" />
+        <label for="address">Endereço</label>
+        <input type="text" name="address" />
+        <button class="btn" id="btn-profile-change">Salvar</button>
+        <h2 id="range-text">Seu raio de atuação</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29272.02673716182!2d-47.47605497253934!3d-23.49638911314944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c58aa52f103a81%3A0x8deaafddceff2255!2sP%C3%A1tio%20Cian%C3%AA%20Shopping!5e0!3m2!1spt-BR!2sbr!4v1682198338922!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </form>
+
+</body>
+
+<footer>
+  <div class="social-midia">
+    <h2 class="title" id="logo"><code></code>DoeAki</h2>
+    <div>
+      <img class="social-media-icons" src="../assets/instagram.png" />
+      <img class="social-media-icons" src="../assets/twitter.png" />
+      <img class="social-media-icons" src="../assets/facebook.png" />
+    </div>
+  </div>
+</footer>

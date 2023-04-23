@@ -36,6 +36,13 @@
   box-shadow: 0.75rem 0.75rem rgba(0,0,0,0.5);
 }
 
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+}
 
 
 /* HEADER */
@@ -132,11 +139,9 @@ header {
   right: 0;
 }
   
-  
 .prev:hover, .next:hover {
   background-color: hsla(232, 5%, 20%, 0.9)
 }
-  
   
 .text {
   display: flex;

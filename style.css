@@ -1,9 +1,11 @@
 /* VARIABLES */
 :root {
   --background: hsla(151, 100%, 37%, 0.8);
-  --text-shadow: 0.2rem 0.2rem rgba(66, 66, 66, 0.3);
+  --text-shadow: 0.2rem 0.2rem rgba(55, 55, 55, 0.2);
   --section-margin-bottom: 5rem;
   --text-margin-bottom: 2rem;
+  --text-color: rgb(255, 255, 255);
+  --title-text-color: rgb(39, 35, 35);
 }
 
 /* COMMON */
@@ -14,18 +16,20 @@
     font-size: 1em;
     font-family: 'Inter', sans-serif;
     text-align: center;
+    color: var(--text-color);
 }
 
 .title {
     font-size: 2.5rem;
     text-shadow: var(--text-shadow);
     margin-bottom: var(--text-margin-bottom);
+    color: var(--title-text-color);;
 }
 
 #logo {
   font-size: 5rem;
   margin-left: var(--text-margin-bottom);
-  color: white;
+  color: var(--text-color);
 }
 
 .btn {
@@ -34,6 +38,7 @@
   font-size: 2rem;
   border-radius: 0.75rem;
   box-shadow: 0.75rem 0.75rem rgba(0,0,0,0.5);
+  font-weight: 600;
 }
 
 a {
@@ -41,7 +46,7 @@ a {
 }
 
 a:visited {
-  color: black;
+  color: var(--title-text-color);
 }
 
 
@@ -60,9 +65,9 @@ header {
 
 #btn-participate-header {
   margin-right: 5rem;
-  color: black;
-  background-color: white;
-  border: 0.2rem solid white;
+  color: var(--title-text-color);
+  background-color: var(--text-color);
+  border: 0.2rem solid var(--text-color);
 }
 
 
@@ -70,7 +75,7 @@ header {
 
 .intro {
   background-color: var(--background);
-  color: white;
+  color: var(--text-color);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -126,8 +131,8 @@ header {
   top: 40%;
   width: 6rem;
   height: 8rem;
-  color: white;
-  font-weight: bold;
+  color: var(--text-color);
+  font-weight: 600;
   font-size: 4rem;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
@@ -140,13 +145,13 @@ header {
 }
   
 .prev:hover, .next:hover {
-  background-color: hsla(232, 5%, 20%, 0.9)
+  background-color: hsla(240, 7%, 23%, 0.9)
 }
   
 .text {
   display: flex;
   align-items: center;
-  color: #f2f2f2;
+  color: var(--text-color);
   background-color: var(--background);
   font-size: 2rem;
   font-weight: 600;
@@ -193,7 +198,7 @@ header {
 }
 
 .steps {
-  color: white;
+  color: var(--text-color);
   padding-left: 1rem;
   font-weight: 600;
   padding: 2rem;
@@ -212,14 +217,12 @@ header {
 
 #help-text {
   font-size: 2rem;
+  color: rgb(39, 35, 35);
+  margin-bottom: 1rem;
 }
 
 #help-now {
   margin-bottom: var(--text-margin-bottom);
-}
-
-#help-text {
-  margin-bottom: 1rem;
 }
 
 iframe {
@@ -229,7 +232,7 @@ iframe {
 }
 
 #btn-help {
-  color: white;
+  color: var(--text-color);
   background-color: var(--background);
   border: 0.2rem solid var(--background);
 }

@@ -1,0 +1,26 @@
+{
+  "name": "doeaki",
+  "version": "1.0.0",
+  "description": "projeto doeaki 2ª entrega ",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RafaelAmr93/doeaki-senac.git"
+  },
+  "author": "RafaelAmr93",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RafaelAmr93/doeaki-senac/issues"
+  },
+  "homepage": "https://github.com/RafaelAmr93/doeaki-senac#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}

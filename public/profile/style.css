@@ -131,6 +131,7 @@ iframe {
     padding-top: 2rem;
     padding-bottom: 2rem;
     background-color:var(--background);
+    width: 100%;
   }
   .social-midia {
     display: flex;

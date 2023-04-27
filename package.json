@@ -18,7 +18,8 @@
   },
   "homepage": "https://github.com/RafaelAmr93/doeaki-senac#readme",
   "dependencies": {
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "mysql2": "^3.2.4"
   },
   "devDependencies": {
     "nodemon": "^2.0.22"

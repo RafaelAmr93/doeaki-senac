@@ -237,6 +237,10 @@ iframe {
   border: 0.2rem solid var(--background);
 }
 
+#btn-help-link {
+  color: var(--text-color);
+}
+
 
 /* FOOTER */
 

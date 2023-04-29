@@ -1,3 +1,5 @@
+/* Criacao do banco de dados por queries*/
+
 /* DB doeaki*/
 CREATE DATABASE doeaki;
 USE doeaki;

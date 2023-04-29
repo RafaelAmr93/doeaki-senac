@@ -7,7 +7,7 @@
     href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
     rel="stylesheet"
   />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="signup.css" />
   <title>Projeto DoeAki</title>
   <script src="script.js" defer></script>
 </head>
@@ -25,18 +25,28 @@
         respeito de eventos em um raio de 50km.
       </p>
     </div>
-    <form action="/profile" method="POST" class="profile-info">
-      <label for="name">Nome completo</label>
-      <input type="text" name="name" />
+    <form action="/perfil" method="post" class="profile-info" id="form">
+      <label for="nome">Nome</label>
+      <input type="text" name="nome" />
+      <label for="sobrenome">Sobrenome</label>
+      <input type="text" name="sobrenome" />
+      <label for="nascimento">Data de nascimento</label>
+      <input type="text" name="nascimento" />
+      <label for="genero">Genero</label>
+      <input type="text" name="genero" />
       <label for="cpf">CPF</label>
       <input type="text" name="cpf" />
+      <label for="email">E-mail</label>
+      <input type="text" name="email" />
+      <label for="celular">Celular</label>
+      <input type="text" name="celular" />
       <label for="cep">CEP</label>
       <input type="text" name="cep" />
-      <label for="address">Endereço</label>
-      <input type="text" name="address" />
+      <label for="endereco">Endereço</label>
+      <input type="text" name="endereco" />
       <div>
-        <button class="btn" id="btn-profile-change">
-          <a href="../profile/profile.html">Enviar</a>
+        <button type="submit" class="btn" id="form">
+          Enviar
         </button>
       </div>
     </form>

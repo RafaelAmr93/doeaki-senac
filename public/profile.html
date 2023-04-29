@@ -7,7 +7,7 @@
     href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
     rel="stylesheet"
   />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="profile.css" />
   <title>Projeto DoeAki</title>
   <script src="script.js" defer></script>
   <script
@@ -24,29 +24,30 @@
   <div class="profile">
     <img id="profile-img" src="../assets/user.png" />
     <button class="btn">Trocar foto</button>
-    <form action="" method="post" class="profile-info">
-      <div class="form-info">
-        <label for="name">Nome completo</label>
-        <input type="text" name="name" />
-        <label for="cpf">CPF</label>
-        <input type="text" name="cpf" />
-        <label for="cep">CEP</label>
-        <input type="text" name="cep" />
-        <label for="address">Endereço</label>
-        <input type="text" name="address" />
-        <button class="btn" id="btn-profile-change">Salvar</button>
-        <h2 id="range-text">Seu raio de atuação</h2>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29272.02673716182!2d-47.47605497253934!3d-23.49638911314944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c58aa52f103a81%3A0x8deaafddceff2255!2sP%C3%A1tio%20Cian%C3%AA%20Shopping!5e0!3m2!1spt-BR!2sbr!4v1682198338922!5m2!1spt-BR!2sbr"
-          width="600"
-          height="450"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
-      </div>
-    </form>
+    <div class="profile-card">
+      <p>Nome</p>
+      <p id="nome"></p>
+      <p>Data de nascimento</p>
+      <p id="nascimento"></p>
+      <p>CPF</p>
+      <p id="cpf"></p>
+      <p>Email</p>
+      <p id="email"></p>
+      <p>Celular</p>
+      <p id="celular"></p>
+      <p>CEP</p>
+      <p id="cep"></p>
+    </div>
+
+    <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29272.02673716182!2d-47.47605497253934!3d-23.49638911314944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c58aa52f103a81%3A0x8deaafddceff2255!2sP%C3%A1tio%20Cian%C3%AA%20Shopping!5e0!3m2!1spt-BR!2sbr!4v1682198338922!5m2!1spt-BR!2sbr"
+    width="600"
+    height="450"
+    style="border: 0"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"
+  ></iframe>
 
     <footer>
       <div class="social-midia">

@@ -34,7 +34,9 @@
   height: 4rem;
   font-size: 2rem;
   border-radius: 0.75rem;
+  background-color: var(--background);
   box-shadow: 0.75rem 0.75rem rgba(0,0,0,0.5);
+  color: var(--text-color);
 }
   
 a {

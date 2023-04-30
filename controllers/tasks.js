@@ -1,35 +1,50 @@
 const Voluntarios = require('../db/models');
-const db = require('../db/connect')
 
 //const criarVoluntario = db.sequelize.define('voluntario')
 
 const criarVoluntario = async (req, res) => {
-    try {
-        await Voluntarios.create({
-            nome: req.body.nome,
-            sobrenome: req.body.sobrenome,
-            nascimento: req.body.nascimento,
-            genero: req.body.genero,
-            cpf: req.body.cpf,
-            email: req.body.email,
-            celular: req.body.celular,
-            cep: req.body.cep,
-            endereco: req.body.endereco
+    await Voluntarios.create({
+        nome: req.body.nome,
+        sobrenome: req.body.sobrenome,
+        nascimento: req.body.nascimento,
+        genero: req.body.genero,
+        cpf: req.body.cpf,
+        email: req.body.email,
+        celular: req.body.celular,
+        cep: req.body.cep,
+        endereco: req.body.endereco
+    })
+        .then(() => {
+            console.log('Sucesso ao inserir os dados no banco.');
+        })
+        .catch(error => {
+            console.log('Erro ao inserir os dados no banco' + error);
         });
-        console.log("Cadastrado");
-    } catch (error) {
-        res.send('Houve um erro durante o cadastro, tente novamente');
-    }
 }
 
 const consultarVoluntario = async (req, res) => {
     try {
-        const { cpf: cpfId } = req.params;
-        const voluntario = await Voluntarios.findOne({ _cpf: cpfId })
-        res.send(voluntario)
-        console.log(voluntario.cpf)
-    } catch (error) {
+        const voluntario = await Voluntarios.findOne(req.body.cpf);
+        console.log(voluntario.cpf);
+        res.send(`
+        <div class="profile-card">
+        <p>Nome</p>
+        <p id="nome">${voluntario.nome}</p>
+        <p>Data de nascimento</p>
+        <p id="nascimento">${voluntario.nascimento}</p>
+        <p>CPF</p>
+        <p id="cpf">${voluntario.cpf}</p>
+        <p>Email</p>
+        <p id="email">${voluntario.email}</p>
+        <p>Celular</p>
+        <p id="celular">${voluntario.celular}</p>
+        <p>CEP</p>
+        <p id="cep">${voluntario.cep}</p>
+      </div>
+        `);
 
+    } catch (error) {
+        console.log(error);
     }
 }
 

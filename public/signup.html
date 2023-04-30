@@ -9,7 +9,8 @@
   />
   <link rel="stylesheet" href="signup.css" />
   <title>Projeto DoeAki</title>
-  <script src="script.js" defer></script>
+  <script src="signup.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </head>
 
 <header>
@@ -25,7 +26,7 @@
         respeito de eventos em um raio de 50km.
       </p>
     </div>
-    <form action="/perfil" method="post" class="profile-info" id="form">
+    <form action="/perfil" method="POST" id="form">
       <label for="nome">Nome</label>
       <input type="text" name="nome" />
       <label for="sobrenome">Sobrenome</label>
@@ -45,7 +46,7 @@
       <label for="endereco">Endereço</label>
       <input type="text" name="endereco" />
       <div>
-        <button type="submit" class="btn" id="form">
+      <button type="submit" class="btn" onClick="perfil()">
           Enviar
         </button>
       </div>

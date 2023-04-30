@@ -6,12 +6,13 @@ const { sequelize: sequelize } = require('./db/connect');
 const {
     criarVoluntario,
     consultarVoluntario
-} = require('./controllers/tasks')
+} = require('./controllers/tasks');
+const formidable = require('formidable');
 const port = 5000
 
 // Define o body parser do express
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(bodyParser.json());
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
 
 // Rotas
 app.use(express.static("/public"));
@@ -23,9 +24,8 @@ app.get('/cadastro', function (req, res) {
 
 });
 app.post('/perfil', function (req, res) {
-    res.sendFile(path.join(__dirname, '/public/profile.html'));
     criarVoluntario(req, res);
-    consultarVoluntario(req, res);
+    //consultarVoluntario(req, res);
 });
 
 // Checa se o servidor local está ativo e em qual porta

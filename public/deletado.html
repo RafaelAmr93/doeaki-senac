@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+    rel="stylesheet"
+  />
+  <style >
+    /* VARIABLES */
+:root {
+    --background: hsla(151, 100%, 37%, 0.8);
+    --text-shadow: 0.2rem 0.2rem rgba(55, 55, 55, 0.2);
+    --section-margin-bottom: 5rem;
+    --text-margin-bottom: 2rem;
+    --text-color: rgb(255, 255, 255);
+    --title-text-color: rgb(39, 35, 35);
+  }
+  
+  /* COMMON */
+  * {
+      box-sizing:border-box;
+      margin: 0;
+      padding: 0;
+      font-size: 1em;
+      font-family: 'Inter', sans-serif;
+      text-align: center;
+      color: var(--text-color);
+  }
+  
+  .title {
+      font-size: 2.5rem;
+      text-shadow: var(--text-shadow);
+      margin-bottom: var(--text-margin-bottom);
+      color: var(--title-text-color);;
+  }
+  
+  #logo {
+    font-size: 5rem;
+    margin-left: var(--text-margin-bottom);
+    color: var(--text-color);
+  }
+  
+  .btn {
+    width: 15rem;
+    height: 4rem;
+    font-size: 2rem;
+    border-radius: 0.75rem;
+    box-shadow: 0.75rem 0.75rem rgba(0,0,0,0.5);
+    font-weight: 600;
+    margin-bottom: 4rem;
+  }
+  
+  a {
+    text-decoration: none;
+    color: var(--title-text-color);
+  }
+  
+  a:visited {
+    color: var(--title-text-color);
+  }
+  
+  
+  /* HEADER */
+  
+  header {
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--background);
+    margin-bottom: var(--section-margin-bottom);
+    align-items: center;
+  }
+  
+  #btn-participate-header {
+    margin-right: 5rem;
+    color: var(--title-text-color);
+    background-color: var(--text-color);
+    border: 0.2rem solid var(--text-color);
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4rem;
+  }
+
+  #profile {
+    background-color: var(--background);
+  }
+
+  #back {
+    background-color: var(--text-color);
+    color: black;
+  }
+
+  /* FOOTER */
+
+footer {
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+    background-color:var(--background);
+  }
+  .social-midia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  
+  .social-media-icons {
+    padding: 1rem;
+  }
+  </style>
+  <title>Projeto DoeAki</title>
+</head>
+
+<header>
+  <h2 class="title" id="logo"><code>&#10084</code>DoeAki</h2>
+</header>
+
+<body>
+
+  <h2 class="title">Cadastro removido!</h2>
+  <form action="/">
+    ><button class="btn" id="back">Voltar</button>
+  </form>
+
+<footer>
+    <div class="social-midia">
+      <h2 class="title" id="logo"><code>&#10084</code>DoeAki</h2>
+      <div>
+        <img class="social-media-icons" src="../assets/facebook.png" />
+        <img class="social-media-icons" src="../assets/twitter.png" />
+        <img class="social-media-icons" src="../assets/facebook.png" />
+      </div>
+    </div>
+  </footer>
+</body>

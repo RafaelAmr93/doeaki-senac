@@ -37,7 +37,7 @@ const consultarVoluntario = async (req, res) => {
     }
 }
 
-const deletarVoluntarios = async (req, res) => {
+const deletarVoluntario = async (req, res) => {
     try {
         const id = req.params.id;
         await Voluntarios.destroy({
@@ -52,6 +52,6 @@ const deletarVoluntarios = async (req, res) => {
 module.exports = {
     criarVoluntario,
     consultarVoluntario,
-    deletarVoluntarios
+    deletarVoluntario
 }
 

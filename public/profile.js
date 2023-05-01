@@ -1,6 +1,6 @@
 const card = document.getElementById('response');
 
-axios.get('/perfil/voluntario')
+const voluntario = axios.get('/perfil/voluntario')
     .then(response => {
         console.log(response.data);
         card.innerHTML = `
@@ -17,9 +17,9 @@ axios.get('/perfil/voluntario')
         `
         const form = document.getElementById('delete-div');
         form.innerHTML = `
-            <form action="/perfil/deletar${response.data.id}" method="DELETE">
-                <button class="btn" id="delete">Deletar conta</button>
-            </form>
+        <form action="/perfil/deletar${response.data.id}" method="DELETE">
+            <button class="btn" id="delete"><a href="deletado.html">Deletar conta</a></button>
+        </form>
         `
     })
     .catch(error => {

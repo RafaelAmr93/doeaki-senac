@@ -5,7 +5,7 @@ const { sequelize: sequelize } = require('./db/connect');
 const {
     criarVoluntario,
     consultarVoluntario,
-    deletarVoluntarios
+    deletarVoluntario
 } = require('./controllers/tasks');
 const port = 5000
 
@@ -39,8 +39,10 @@ app.get('/perfil/voluntario', function (req, res) {
     consultarVoluntario(req, res);
 });
 app.get('/perfil/deletar:id', function (req, res) {
-    deletarVoluntarios(req, res);
-    res.sendFile(path.join(__dirname, '/public/delete.html'));
+    deletarVoluntario(req, res);
+});
+app.get('/perfil/deletado', function (req, res) {
+    res.sendFile(path.join(__dirname, '/public/deletado.html'));
 })
 
 // Checa se o servidor local está ativo e em qual porta

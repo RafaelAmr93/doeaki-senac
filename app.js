@@ -44,6 +44,9 @@ app.get('/perfil/deletar:id', function (req, res) {
 app.get('/perfil/deletado', function (req, res) {
     res.sendFile(path.join(__dirname, '/public/deletado.html'));
 })
+app.get('/desastre', function (req, res) {
+    res.sendFile(path.join(__dirname, '/public/desastre.html'));
+})
 
 // Checa se o servidor local está ativo e em qual porta
 app.listen(port, () => {

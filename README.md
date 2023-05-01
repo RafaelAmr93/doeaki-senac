@@ -16,7 +16,7 @@ Robson Aparecido Ramos
 
 
 # Projeto DoeAki
-Portal que reúne ONGs que prestam auxílio em desastre ambientais e voluntários em potencial.
+Portal que reúne ONGs que prestam auxílio em desastres ambientais e voluntários em potencial.
 
 # O MVP foi desenvolvido como mobile-first
 Para visualizá-lo como foi projetado, ao abrir a página inicial, clicar com botão direito > Inspecionar > Clicar no ícone de celular para ter a visão mobile

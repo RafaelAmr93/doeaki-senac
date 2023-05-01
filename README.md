@@ -33,8 +33,16 @@ Para visualizá-lo como foi projetado, ao abrir a página inicial, clicar com bo
 * MySQL
 
 
+
 Para rodar o projeto localmente é necessário ter instalado:
 * Node.js (pode ser necessário adicionar o node à variável de ambiente PATH)
 * MySQL Server e o serviço rodando (no Windows > Iniciar+R > services.msc > MySql > Botão direito e Iniciar)
 * Rodar a query do arquivo doeaki.sql no terminal do MySql para criar o banco de dados e as tabelas
 * Abrir o terminal na pasta com os arquivos e digitar: npm start
+
+
+### Melhorias
+Algumas melhorias já foram mapeadas e tornariam o código mais eficiente:
+* Implementação de uma template engine, como Handlebars, para diminuir a repetição de código HTML
+* SCSS para diminuir a repetição de código e otimizar a renderização
+* Rotina que cria o banco de dados e as tabelas apenas ao inicializar o npm, sem ser necessário rodar uma query

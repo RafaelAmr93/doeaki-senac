@@ -9,10 +9,8 @@
   />
   <link rel="stylesheet" href="profile.css" />
   <title>Projeto DoeAki</title>
-  <script
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
-    defer
-  ></script>
+  <script src="profile.js" defer></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </head>
 
 <header>
@@ -21,10 +19,12 @@
 
 <body>
   <div class="profile">
+    <h2 class="title">Seu perfil</h2>
     <img id="profile-img" src="../assets/user.png" />
     <button class="btn">Trocar foto</button>
+    <div id="response"></div>
 
-
+    <h2 class="title" id="range">Seu raio de atuação</h2>
     <iframe
     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29272.02673716182!2d-47.47605497253934!3d-23.49638911314944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c58aa52f103a81%3A0x8deaafddceff2255!2sP%C3%A1tio%20Cian%C3%AA%20Shopping!5e0!3m2!1spt-BR!2sbr!4v1682198338922!5m2!1spt-BR!2sbr"
     width="600"
@@ -34,6 +34,8 @@
     loading="lazy"
     referrerpolicy="no-referrer-when-downgrade"
   ></iframe>
+
+  <div id="delete-div"></div>
 
     <footer>
       <div class="social-midia">

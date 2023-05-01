@@ -24,25 +24,26 @@ const criarVoluntario = async (req, res) => {
 
 const consultarVoluntario = async (req, res) => {
     try {
-        const voluntario = await Voluntarios.findOne(req.body.cpf);
+        const voluntario = await Voluntarios.findOne({
+            limite: 1,
+            order: [['createdAt', 'DESC']]
+        });
         console.log(voluntario.cpf);
-        res.send(`
-        <div class="profile-card">
-        <p>Nome</p>
-        <p id="nome">${voluntario.nome}</p>
-        <p>Data de nascimento</p>
-        <p id="nascimento">${voluntario.nascimento}</p>
-        <p>CPF</p>
-        <p id="cpf">${voluntario.cpf}</p>
-        <p>Email</p>
-        <p id="email">${voluntario.email}</p>
-        <p>Celular</p>
-        <p id="celular">${voluntario.celular}</p>
-        <p>CEP</p>
-        <p id="cep">${voluntario.cep}</p>
-      </div>
-        `);
 
+        res.send(voluntario);
+
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+const deletarVoluntarios = async (req, res) => {
+    try {
+        const id = req.params.id;
+        await Voluntarios.destroy({
+            where: { id: id }
+        });
+        console.log("Cadastro removido.")
     } catch (error) {
         console.log(error);
     }
@@ -50,6 +51,7 @@ const consultarVoluntario = async (req, res) => {
 
 module.exports = {
     criarVoluntario,
-    consultarVoluntario
+    consultarVoluntario,
+    deletarVoluntarios
 }
 

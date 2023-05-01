@@ -1,40 +1,52 @@
 const express = require('express');
 const app = express();
 const path = require('path');
-const bodyParser = require('body-parser');
 const { sequelize: sequelize } = require('./db/connect');
 const {
     criarVoluntario,
-    consultarVoluntario
+    consultarVoluntario,
+    deletarVoluntarios
 } = require('./controllers/tasks');
-const formidable = require('formidable');
 const port = 5000
 
-// Define o body parser do express
+// Define o body parser
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
+// O express servirá todo conteúdo estático dentro de public
+app.use(express.static(path.join(__dirname, 'public')));
+
+
 // Rotas
-app.use(express.static("/public"));
 app.get('/', function (req, res) {
     res.sendFile(path.join(__dirname, '/public/index.html'));
 });
+
 app.get('/cadastro', function (req, res) {
     res.sendFile(path.join(__dirname, '/public/signup.html'));
 
 });
-app.post('/perfil', function (req, res) {
+app.post('/cadastrado', function (req, res) {
     criarVoluntario(req, res);
-    //consultarVoluntario(req, res);
+    res.sendFile(path.join(__dirname, '/public/cadastrado.html'));
 });
 
+app.get('/perfil', function (req, res) {
+    res.sendFile(path.join(__dirname, '/public/profile.html'));
+});
+
+app.get('/perfil/voluntario', function (req, res) {
+    consultarVoluntario(req, res);
+});
+app.get('/perfil/deletar:id', function (req, res) {
+    deletarVoluntarios(req, res);
+    res.sendFile(path.join(__dirname, '/public/delete.html'));
+})
+
 // Checa se o servidor local está ativo e em qual porta
-app.listen(port, (req, res) => {
+app.listen(port, () => {
     console.log(`Escutando na porta ${port}...`);
 });
 
 // Conecta ao banco de dados
 sequelize.authenticate().then(console.log("Conectado ao banco de dados doeki"));
-
-// Pede ao express servir o conteúdo da pasta public (front)
-app.use(express.static('public'));

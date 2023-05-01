@@ -63,6 +63,7 @@ header {
 }
 
 
+
   /* SIGN UP */
 
 .explanation {
@@ -81,6 +82,7 @@ input {
   margin-bottom: 1rem;
   background-color: rgba(240, 238, 238, 0.672);
   font-size: 2rem;
+  text-align: start;
 }
 
 .important>p {
@@ -113,6 +115,20 @@ label {
   background-color: var(--background);
   border: 0.2rem solid var(--background);
 }
+
+#go-back-btn {
+  margin-top: 2rem;
+  color: black;
+  background-color: var(--text-color);
+}
+
+#go-back-link{
+  color: black;
+}
+#go-back-link:visited {
+  color: black;
+}
+
 
   /* FOOTER */
   

@@ -6,8 +6,6 @@ Fabio Yoshihara Suehara
 
 Julio Martini Marcelo Soares
 
-Marcelo Soares
-
 Mariana Moraes Costa
 
 Rafael Rodrigues Amaro Nunes
@@ -48,4 +46,4 @@ Para rodar o projeto localmente é necessário ter instalado:
 Algumas melhorias já foram mapeadas e tornariam o código mais eficiente:
 * Implementação de uma template engine, como Handlebars, para diminuir a repetição de código HTML
 * SCSS para diminuir a repetição de código e otimizar a renderização
-* Rotina que cria o banco de dados e as tabelas apenas ao inicializar o npm, sem ser necessário rodar uma query
+* (**FEITO**) Rotina que cria o banco de dados e as tabelas apenas ao inicializar o npm, sem ser necessário rodar uma query

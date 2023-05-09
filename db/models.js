@@ -1,6 +1,6 @@
 const {
-    Sequelize: Sequelize,
-    sequelize: sequelize
+    Sequelize,
+    sequelize
 } = require('./connect.js');
 
 // Voluntarios
@@ -17,7 +17,7 @@ const Voluntarios = sequelize.define('voluntarios', {
         type: Sequelize.STRING
     },
     nascimento: {
-        type: Sequelize.INTEGER
+        type: Sequelize.STRING
     },
     genero: {
         type: Sequelize.STRING
@@ -40,7 +40,7 @@ const Voluntarios = sequelize.define('voluntarios', {
 });
 
 // Cria a tabela voluntarios
-//Voluntarios.sync({ force: true });
+Voluntarios.sync({ force: true });
 
 // Desastre natural
 const Desastre = sequelize.define('desastre', {
@@ -64,6 +64,6 @@ const Desastre = sequelize.define('desastre', {
 });
 
 // Cria a tabela desastres
-//Desastre.sync({ firce: true });
+Desastre.sync({ force: true });
 
-module.exports = Voluntarios
+module.exports = Voluntarios;

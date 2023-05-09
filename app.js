@@ -53,5 +53,3 @@ app.listen(port, () => {
     console.log(`Escutando na porta ${port}...`);
 });
 
-// Conecta ao banco de dados
-sequelize.authenticate().then(console.log("Conectado ao banco de dados doeki"));

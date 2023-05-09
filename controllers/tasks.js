@@ -1,7 +1,5 @@
 const Voluntarios = require('../db/models');
 
-//const criarVoluntario = db.sequelize.define('voluntario')
-
 const criarVoluntario = async (req, res) => {
     await Voluntarios.create({
         nome: req.body.nome,

@@ -1,7 +1,6 @@
 const express = require('express');
 const app = express();
 const path = require('path');
-const { sequelize: sequelize } = require('./db/connect');
 const {
     criarVoluntario,
     consultarVoluntario,
@@ -52,4 +51,3 @@ app.get('/desastre', function (req, res) {
 app.listen(port, () => {
     console.log(`Escutando na porta ${port}...`);
 });
-

@@ -18,6 +18,9 @@ Robson Aparecido Ramos
 # Projeto DoeAki
 Portal que reúne ONGs que prestam auxílio em desastres ambientais e voluntários em potencial.
 
+# Figma
+https://www.figma.com/file/A1YJEM3KPthS2h9xjZnRmL/DoeAki2.0?type=design
+
 # O MVP foi desenvolvido como mobile-first
 Para visualizá-lo como foi projetado, ao abrir a página inicial, clicar com botão direito > Inspecionar > Clicar no ícone de celular para ter a visão mobile
 
